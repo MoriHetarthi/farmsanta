@@ -81,3 +81,83 @@
   margin-left: 0px;
   padding: 0px;
 }
+
+/*---------------------------------------------Territories-----------------------------------------*/
+.containers{
+  margin-left: 2rem;
+ 
+}
+.head-territory{
+ 
+  display: flex;
+  align-items: center;
+  padding: 10px;
+ 
+}
+
+.all-territory{
+  background-color: white;
+  padding: 10px;
+}
+
+.form-control{
+  width: 12rem !important;
+  margin-left: 10px;
+  height: 2.2rem;
+  
+}
+
+.add-new{
+  color: rgb(5, 53, 37);
+  width: 12rem !important;
+  border-radius: 7px !important;
+  margin-right: 15px;
+}
+
+.all-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+tr{
+  border-color: none !important;
+}
+
+.table>thead{
+  border-style: hidden;
+  color: rgb(99, 99, 99);
+
+}
+
+.badge{
+  background-color: rgb(200,239,218) !important;
+  color: rgb(6, 58, 6) !important;
+  border-radius: 8px;
+  width: 4rem;
+  font-weight: 500 !important;
+  border-radius: 9px !important;
+}
+
+.footer-territory{
+  height: 4.5rem;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  justify-content: space-between;
+}
+
+.footer-element{
+  margin-right: 2.5rem;
+  width: 2.5rem;
+  background-color: rgb(200,239,218);
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px;
+}
+
+
+
