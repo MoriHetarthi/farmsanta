@@ -108,10 +108,11 @@
 }
 
 .add-new{
-  color: rgb(5, 53, 37);
-  width: 12rem !important;
-  border-radius: 7px !important;
+  background-color: #16574F !important;
+  border-radius: 0px !important;
   margin-right: 15px;
+  width: 10.5rem;
+  padding: 2.5px !important;
 }
 
 .all-head{
@@ -157,6 +158,15 @@ tr{
   flex-direction: row;
   justify-content: center;
   border: 1px;
+}
+
+.search-button{
+  Background-color:rgb(239,239,239)!important;
+  border-radius: 1px;
+  border: 1px solid #ced4da;
+  height: fit-content;
+  margin-left: 1rem;
+  margin-top: 1px;
 }
 
 
