@@ -7,6 +7,7 @@ import { faCloud } from "@fortawesome/free-solid-svg-icons";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { faRotate } from "@fortawesome/free-solid-svg-icons";
 import ReactDOM from "react-dom/client";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 function Territories() {
   return (
@@ -16,12 +17,12 @@ function Territories() {
         style={{ backgroundColor: "rgb(239,239,239)" }}
       >
         <div className="head-territory">
-          <p>Territory</p>
+          <p style={{ marginLeft: '1rem' }}>Territory</p>
         </div>
-        <div className="all-territory">
-          <div className="d-flex flex-row all-head my-3">
-            <div className="search d-flex flex-row">
-              <p style={{ marginTop: "2px" }}>All Territory(s)</p>
+        <div className="all-territory mx-1">
+          <div className="d-flex flex-row all-head" style={{ alignItems: 'center' }}>
+            <div className="search d-flex flex-row" style={{ alignItems: 'center' }}>
+              <p style={{ marginTop: "13px" }}>All Territory(s)</p>
               <input
                 class="form-control mr-sm-2"
                 type="search"
@@ -40,15 +41,28 @@ function Territories() {
             </div>
 
             <div className="">
+              <div
+                class="btn-group edit-button"
+                role="group"
+                aria-label="Third group"
+              >
+                <button type="button" class="btn btn-sm d-flex flex-row" style={{ justifyContent: 'center', marginTop: '1.5px' }}>
+                  <FontAwesomeIcon icon={faPenToSquare} />
+                  <p style={{ fontSize: '12px' }}>Edit</p>
+                </button>
+
+
+              </div>
+
               <button type="button" class="btn btn-success btn-md add-new">
                 + Add new
               </button>
             </div>
           </div>
 
-          <div className="territory-content my-3 p-3">
-            <table class="table align-middle">
-              <thead class="thead-light" style={{ backgroundColor: "#f0f8f7" }}>
+          <div className="territory-content">
+            <table className="table align-middle">
+              <thead className="thead-light" style={{ backgroundColor: "#f0f8f7" }}>
                 <tr>
                   <th className="col-1" scope="col"></th>
                   <th className="col-2" scope="col">
@@ -68,10 +82,10 @@ function Territories() {
                   </th>
                 </tr>
               </thead>
-              <tbody>
-                <tr style={{ color: "rgb(128, 128, 128)" }}>
+              <tbody className="table-body">
+                <tr style={{ color: "#495058" }}>
                   <th scope="row">
-                    <input
+                    <input className="checkbox"
                       type="checkbox"
                       aria-label="Checkbox for following text input"
                     />
@@ -80,18 +94,18 @@ function Territories() {
                   <td>Cameroon</td>
                   <td>English,French</td>
                   <td>
-                    Description Officially the Republic of Cameroon, is a
+                    Officially the Republic of Cameroon, is a
                     country in west-central Africa. It is bordered by Nigeria to
                     the west and north, Chad to the northeast; the Central
                     African Republic to the east.
                   </td>
                   <td>
-                    <span class="badge badge-pill badge-success">active</span>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
                   </td>
                 </tr>
-                <tr style={{ color: "rgb(128, 128, 128)" }}>
+                <tr style={{ color: "#495058" }}>
                   <th scope="row">
-                    <input
+                    <input className="checkbox"
                       type="checkbox"
                       aria-label="Checkbox for following text input"
                     />
@@ -104,12 +118,12 @@ function Territories() {
                     Eastern Africa.
                   </td>
                   <td>
-                    <span class="badge badge-pill badge-success">active</span>
+                    <span class="badge badge-pill active-badge badge-success">active</span>
                   </td>
                 </tr>
-                <tr style={{ color: "rgb(128, 128, 128)" }}>
+                <tr style={{ color: "#495058" }}>
                   <th scope="row">
-                    <input
+                    <input className="checkbox"
                       type="checkbox"
                       aria-label="Checkbox for following text input"
                     />
@@ -125,12 +139,12 @@ function Territories() {
                     Rwanda, and to the south by Tanzania.
                   </td>
                   <td>
-                    <span class="badge badge-pill badge-success">active</span>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
                   </td>
                 </tr>
-                <tr style={{ color: "rgb(128, 128, 128)" }}>
+                <tr style={{ color: "#495058" }}>
                   <th scope="row">
-                    <input
+                    <input className="checkbox"
                       type="checkbox"
                       aria-label="Checkbox for following text input"
                     />
@@ -139,20 +153,104 @@ function Territories() {
                   <td>Togo</td>
                   <td>French</td>
                   <td>
-                  Togo, a West African nation on the Gulf of Guinea.
+                    Togo, a West African nation on the Gulf of Guinea.
                   </td>
                   <td>
-                    <span class="badge badge-pill badge-success">active</span>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
                   </td>
+
                 </tr>
+
+                <tr style={{ color: "#495058" }}>
+                  <th scope="row">
+                    <input className="checkbox"
+                      type="checkbox"
+                      aria-label="Checkbox for following text input"
+                    />
+                  </th>
+                  <td>Togo</td>
+                  <td>Togo</td>
+                  <td>French</td>
+                  <td>
+                    Togo, a West African nation on the Gulf of Guinea.
+                  </td>
+                  <td>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
+                  </td>
+
+
+                </tr>
+
+                <tr style={{ color: "#495058" }}>
+                  <th scope="row">
+                    <input className="checkbox"
+                      type="checkbox"
+                      aria-label="Checkbox for following text input"
+                    />
+                  </th>
+                  <td>Togo</td>
+                  <td>Togo</td>
+                  <td>French</td>
+                  <td>
+                    Togo, a West African nation on the Gulf of Guinea.
+                  </td>
+                  <td>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
+                  </td>
+
+
+                </tr>
+
+                <tr style={{ color: "#495058" }}>
+                  <th scope="row">
+                    <input className="checkbox"
+                      type="checkbox"
+                      aria-label="Checkbox for following text input"
+                    />
+                  </th>
+                  <td>Togo</td>
+                  <td>Togo</td>
+                  <td>French</td>
+                  <td>
+                    Togo, a West African nation on the Gulf of Guinea.
+                  </td>
+                  <td>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
+                  </td>
+
+
+                </tr>
+
+                <tr style={{ color: "#495058" }}>
+                  <th scope="row">
+                    <input className="checkbox"
+                      type="checkbox"
+                      aria-label="Checkbox for following text input"
+                    />
+                  </th>
+                  <td>Togo</td>
+                  <td>Togo</td>
+                  <td>French</td>
+                  <td>
+                    Togo, a West African nation on the Gulf of Guinea.
+                  </td>
+                  <td>
+                    <span class="badge badge-pill  active-badge badge-success">active</span>
+                  </td>
+
+
+                </tr>
+
               </tbody>
             </table>
           </div>
 
-          <div className="footer-territory d-flex flex-row">
-            <p> Showing 1 to 8 of 8 results</p>
-            <div className="footer-element">
-              <p>1</p>
+          <div className="footer-main">
+            <div className="footer-territory d-flex flex-row">
+              <p style={{ marginLeft: '1rem' }}> Showing 1 to 8 of 8 results</p>
+              <div className="footer-element">
+                <p style={{ marginTop: '3px' }}>1</p>
+              </div>
             </div>
           </div>
         </div>

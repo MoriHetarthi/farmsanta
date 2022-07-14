@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .head{
@@ -84,20 +85,20 @@
 
 /*---------------------------------------------Territories-----------------------------------------*/
 .containers{
-  margin-left: 2rem;
+  
  
 }
 .head-territory{
  
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 7px;
  
 }
 
 .all-territory{
   background-color: white;
-  padding: 10px;
+  
 }
 
 .form-control{
@@ -119,6 +120,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 17px;
 }
 
 tr{
@@ -127,38 +129,27 @@ tr{
 
 .table>thead{
   border-style: hidden;
-  color: rgb(99, 99, 99);
+  font-size: 14px;
+  color: #495058;
+  font-weight: 400;
 
 }
 
-.badge{
+.table>:not(caption)>*>* {
+  padding: 1rem 1rem !important;
+}
+
+.active-badge{
   background-color: rgb(200,239,218) !important;
   color: rgb(6, 58, 6) !important;
   border-radius: 8px;
-  width: 4rem;
+  width: 3.5rem;
   font-weight: 500 !important;
   border-radius: 9px !important;
+  height: 22px;
+  align-items: center;
 }
 
-.footer-territory{
-  height: 4.5rem;
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  margin-left: 2rem;
-  justify-content: space-between;
-}
-
-.footer-element{
-  margin-right: 2.5rem;
-  width: 2.5rem;
-  background-color: rgb(200,239,218);
-  height: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border: 1px;
-}
 
 .search-button{
   Background-color:rgb(239,239,239)!important;
@@ -169,5 +160,49 @@ tr{
   margin-top: 1px;
 }
 
+.checkbox{
+  width: 17px;
+  height: 17px;
+}
 
+.table-body{
+  font-size: 14px;
+}
 
+.territory-content{
+  overflow: scroll;
+  color:#495058 !important;
+}
+
+.edit-button{
+  Background-color:rgb(239,239,239)!important;
+  border-radius: 1px;
+  border: 1px solid #ced4da;
+  height: 2rem;
+  width: 4.2rem;
+  margin-right: 1rem;
+ 
+}
+
+.footer-element{
+  margin-right: 2.5rem;
+  width: 2.5rem;
+  background-color: rgb(200,239,218);
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  border: 1px;
+}
+
+.footer-territory{
+  height: 4.8rem;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid rgba(221,221,221);
+  align-items: center;
+  font-size: 13px;
+}
