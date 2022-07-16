@@ -206,3 +206,38 @@ tr{
   align-items: center;
   font-size: 13px;
 }
+
+
+/*-----------------------------------------------Users------------------------------------------------*/
+.user-body{
+  margin: auto;
+}
+
+.user-card{
+  box-shadow: 0 2px 4px 0 #0003;
+}
+
+.card-footer{
+  background-color: white !important;
+  border-top: 2px solid #ccc !important;
+}
+
+.user-footer{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.user-footer p{
+  font-weight: 600;
+  margin: 0px;
+}
+
+.user-content{
+  display: grid;
+  grid-gap: 1.8rem;
+  grid-template-columns: repeat(3,1fr);
+  width: 95%;
+  margin: auto;
+
+}

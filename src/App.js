@@ -8,6 +8,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Territories from "../src/pages/Territories";
 import Dashboard from "../src/pages/Dashboard";
+import Users from "../src/pages/Users";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/territories" element={<Territories />}/>
           <Route path="/dashboard" element={<Dashboard />}/>
+          <Route path="/users" element={<Users />}/>
         </Routes>
       </BrowserRouter>
 
