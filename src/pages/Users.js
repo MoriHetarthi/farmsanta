@@ -27,13 +27,13 @@ function Users() {
                         <div className="search d-flex flex-row" style={{ alignItems: 'center' }}>
                             <p style={{ marginTop: "13px" }}>All Users(s)</p>
                             <input
-                                class="form-control mr-sm-2"
+                                className="form-control mr-sm-2"
                                 type="search"
                                 placeholder="Search"
                                 aria-label="Search"
                             />
                             <div
-                                class="btn-group search-button"
+                                className="btn-group search-button"
                                 role="group"
                                 aria-label="Third group"
                             >
@@ -45,7 +45,7 @@ function Users() {
 
                         <div className="">
                             <div
-                                class="btn-group edit-button"
+                                className="btn-group edit-button"
                                 role="group"
                                 aria-label="Third group"
                             >
@@ -61,7 +61,7 @@ function Users() {
 
                             </div>
 
-                            <button type="button" class="btn btn-success btn-md add-new">
+                            <button type="button" className="btn btn-success btn-md add-new">
                                 + Add new
                             </button>
                         </div>
